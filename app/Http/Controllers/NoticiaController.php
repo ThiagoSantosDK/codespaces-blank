@@ -118,6 +118,6 @@ class NoticiaController extends Controller
         $noticia->delete();
 
         return redirect()->away('/admin/noticias')
-            ->with('success', 'Noticia destruido com sucesso!');
+            ->with('success', 'Noticia destruida com sucesso!');
     }
 }
