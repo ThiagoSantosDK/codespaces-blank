@@ -16,9 +16,9 @@
     <!-- Mostrar o conteudo principal -->
      <main>
         <!-- Mostrar mensagem de sucesso -->
-        @if(session("sucess"))
+        @if(session("success"))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            {{ session("sucess") }}
+            {{ session("success") }}
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
         @endif
@@ -40,6 +40,7 @@
     </footer>
     
 <!-- Bootstrap JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
