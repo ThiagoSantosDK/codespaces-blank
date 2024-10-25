@@ -41,7 +41,7 @@ class NoticiaController extends Controller
         //AppServiceProvider
         //return view('site.cadernos.create');
         return view(
-            'site.noticias.create',
+            'admin.noticias.create',
             compact('autores', 'cadernos')
         );
     }

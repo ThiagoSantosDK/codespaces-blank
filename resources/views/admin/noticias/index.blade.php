@@ -5,7 +5,7 @@
     <!-- Cabeçalho -->
     <div>
         <h2>Noticias</h2>
-        <a href="/admim/noticias/create" class="btn btn-sucess">Novo</a>
+        <a href="/admin/noticias/create" class="btn btn-success">Novo</a>
     </div>
     <!-- Tabela -->
     <div class="table-responsive">
