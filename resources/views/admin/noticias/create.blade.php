@@ -82,13 +82,13 @@
                     {{ $errors->first('id_caderno') }}
                 </div>
                 @endif
-            
 
-            <button type="submit" class="btn btn-success">Salvar</button>
+
+                <button type="submit" class="btn btn-success">Salvar</button>
 
         </form>
 
     </div>
-    
+
 </div>
 @endsection
