@@ -13,7 +13,7 @@ class Caderno extends Model
     protected $fillable = ['nome'];
 
     public function noticias(){
-        return $this->hasMany(Noticia::class);
+        return $this->hasMany(Noticia::class, 'id_caderno');
     }
 
 }

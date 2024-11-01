@@ -36,7 +36,7 @@ class CadernoController extends Controller
     {
         Caderno::create($request->all());
 
-        return redirect()->away('/cadernos')
+        return redirect()->away('/admin/cadernos')
             ->with('success', 'Caderno criado com sucesso!');
     }
 
@@ -68,7 +68,7 @@ class CadernoController extends Controller
         //
         $caderno = Caderno::find($id);
         $caderno->update($request->all());
-        return redirect()->away('/cadernos')
+        return redirect()->away('/admin/cadernos')
             ->with('success', 'Caderno atualizado com sucesso!');
     }
 
@@ -80,12 +80,12 @@ class CadernoController extends Controller
         //
         $caderno = Caderno::find($id);
         if ($caderno->noticias()->count() > 0) {
-            return redirect()->away('/cadernos')
+            return redirect()->away('/admin/cadernos')
                 ->with('error', 'Caderno possui dependentes!');
-        } else {
+        } 
             $caderno->delete();
-            return redirect()->away('/cadernos')
+            return redirect()->away('/admin/cadernos')
                 ->with('success', 'Caderno removido com sucesso!');
         }
     }
-}
+
